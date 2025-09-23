@@ -1,0 +1,162 @@
+/* =====================
+   Reset Básico
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background-color: #fff8f2;
+    color: #5a3e36;
+    line-height: 1.6;
+  }
+  
+  /* =====================
+     Header
+  ===================== */
+  .header {
+    background-color: #fff0e5;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header__logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #c75b39;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+  }
+  
+  .nav__list {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+  }
+  
+  .nav__link {
+    text-decoration: none;
+    color: #5a3e36;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ffb199;
+    transition: width 0.3s ease;
+  }
+  
+  .nav__link:hover {
+    color: #c75b39;
+  }
+  
+  .nav__link:hover::after {
+    width: 100%;
+  }
+  
+  .header__cart-link {
+    font-size: 22px;
+    color: #c75b39;
+    text-decoration: none;
+  }
+  
+  /* =====================
+     Hero Section
+  ===================== */
+  .hero {
+    background: linear-gradient(to bottom right, #ffe0d0, #fff5ee);
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: "✨";
+    font-size: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0.1;
+  }
+  
+  .hero__title {
+    font-size: 48px;
+    color: #a2483b;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    text-shadow: 1px 1px #fff;
+  }
+  
+  .hero__subtitle {
+    font-size: 20px;
+    color: #5a3e36;
+    margin-bottom: 35px;
+    max-width: 600px;
+    margin-inline: auto;
+    background-color: #ffffffcc;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  /* =====================
+     Botão frufru
+  ===================== */
+  .btn {
+    display: inline-block;
+    padding: 14px 36px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn--primary {
+    background: linear-gradient(to right, #ff9a9e, #fecfef);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(255, 173, 185, 0.4);
+  }
+  
+  .btn--primary:hover {
+    background: linear-gradient(to right, #fecfef, #ff9a9e);
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  /* =====================
+     Footer elegante
+  ===================== */
+  .footer {
+    background-color: #5a3e36;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer__text {
+    font-size: 16px;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+  }
+  
