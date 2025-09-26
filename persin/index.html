@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <!-- Header -->
   <header class="header">
     <div class="header__logo">Bella Cosmetics</div>
     <nav class="header__nav">
@@ -19,18 +20,38 @@
       </ul>
     </nav>
     <div class="header__cart">
-      <a href="#" class="header__cart-link">🛒</a>
+      <a href="#" class="header__cart-link">🛒<span class="cart__count">3</span></a>
     </div>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
-    <div class="hero__content">
-      <h1 class="hero__title">Realce sua Beleza Natural</h1>
-      <p class="hero__subtitle">Descubra nossa coleção exclusiva de maquiagem profissional.</p>
-      <a href="products.html" class="btn btn--primary">Explorar Produtos</a>
+    <div class="hero__text">
+      <h1><span>Realce sua</span> <strong>Beleza Natural</strong></h1>
+      <p>
+        Descubra nossa coleção exclusiva de maquiagem profissional.  
+        Produtos de alta qualidade para todos os tons de pele e estilos.
+      </p>
+      <div class="hero__buttons">
+        <a href="products.html" class="btn btn--primary">Explorar Produtos</a>
+        <a href="about.html" class="btn btn--secondary">Sobre nós</a>
+      </div>
+    </div>
+
+    <div class="hero__card">
+      <span class="hero__icon">💄</span>
+      <h3>Coleção Premium</h3>
+      <p>Mais de 200 produtos disponíveis</p>
     </div>
   </section>
 
+  <!-- Categorias -->
+  <section class="categories">
+    <h2>Nossas Categorias</h2>
+    <p>Encontre exatamente o que você precisa</p>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
     <p class="footer__text">© 2025 Bella Cosmetics. Todos os direitos reservados.</p>
   </footer>
