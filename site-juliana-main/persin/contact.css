@@ -1,0 +1,162 @@
+/* =====================
+   Reset básico
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fffaf7; /* Cor de fundo mais clara */
+    color: #2c3e50; /* Cor do texto */
+    line-height: 1.6;
+}
+
+/* =====================
+   Header
+===================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cart a {
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+/* =====================
+   Conteúdo da página Contato
+===================== */
+.contact {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 36px;
+    color: #40210f;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 16px;
+    color: #40210f;
+    font-weight: 600;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #e2e2e2;
+    font-size: 16px;
+    color: #40210f;
+    width: 100%;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #40210f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #d35400; /* Cor de hover do botão */
+    cursor: pointer;
+}
+
+/* =====================
+   Footer
+===================== */
+footer {
+    background-color: #34495e; /* Cor de fundo do footer */
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* =====================
+   Responsividade
+===================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav__list {
+        display: none; /* Podemos adicionar um menu de hambúrguer mais tarde */
+    }
+
+    .contact {
+        padding: 40px 20px;
+    }
+
+    .contact h1 {
+        font-size: 30px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+}

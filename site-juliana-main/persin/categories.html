@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Categorias - Bella Cosmetics</title>
+  <link rel="stylesheet" href="categories.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="logo">Bella Cosmetics</div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="products.html">Produtos</a></li>
+          <li><a href="categories.html" class="active">Categorias</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart">
+        <a href="#" aria-label="Ir para o carrinho">🛒<span class="cart__count">3</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / topo da seção de categorias -->
+    <section class="categories-hero">
+      <h1>Nossas Categorias</h1>
+      <p class="lead">Encontre exatamente o que você precisa</p>
+    </section>
+
+    <!-- Grade de categorias -->
+    <section class="categories-grid" aria-label="Lista de categorias">
+      <div class="category-list">
+        <article class="category-item">
+          <div class="cat-icon" aria-hidden="true">💄</div>
+          <h3>Maquiagem</h3>
+          <p>Fundos, batons, sombras e mais</p>
+          <a class="cat-btn" href="products.html?cat=maquiagem">Ver Produtos</a>
+        </article>
+
+        <article class="category-item">
+          <div class="cat-icon" aria-hidden="true">🧴</div>
+          <h3>Pele</h3>
+          <p>Hidratantes, protetores solares e mais</p>
+          <a class="cat-btn" href="products.html?cat=pele">Ver Produtos</a>
+        </article>
+
+        <!-- Sugestões — você pode remover/editar -->
+        <article class="category-item">
+          <div class="cat-icon" aria-hidden="true">👁️</div>
+          <h3>Olhos</h3>
+          <p>Séruns, sombras e máscaras</p>
+          <a class="cat-btn" href="products.html?cat=olhos">Ver Produtos</a>
+        </article>
+
+        <article class="category-item">
+          <div class="cat-icon" aria-hidden="true">💋</div>
+          <h3>Lábios</h3>
+          <p>Bálsamos, batons e glosses</p>
+          <a class="cat-btn" href="products.html?cat=labios">Ver Produtos</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Bella Cosmetics. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

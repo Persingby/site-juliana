@@ -1,0 +1,196 @@
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fff;
+  color: #2b2b2b;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Header */
+.header {
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(18,18,18,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+.header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b1b15;  /* Alterado para marrom mais quente */
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav__list a {
+  text-decoration: none;
+  color: #2c3e3e;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 6px 4px;
+  border-radius: 4px;
+}
+
+.nav__list a:hover,
+.nav__list a.active {
+  color: #e67e22;  /* Alterado para tom de laranja mais quente */
+}
+
+/* Carrinho */
+.cart a {
+  position: relative;
+  color: #2c3e3e;
+  font-size: 20px;
+  text-decoration: none;
+}
+.cart__count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #e67e22;  /* Alterado para o tom de laranja mais quente */
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+/* Hero da seção de categorias */
+.categories-hero {
+  max-width: 1100px;
+  margin: 48px auto 24px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.categories-hero h1 {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  color: #40210f;
+  margin-bottom: 10px;
+  line-height: 1.05;
+}
+
+.categories-hero .lead {
+  color: #666;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+/* Grid de categorias */
+.categories-grid {
+  max-width: 1100px;
+  margin: 10px auto 60px;
+  padding: 0 20px;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+/* Cada card */
+.category-item {
+  background: linear-gradient(135deg, #ffe5d1, #fdf5ef);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 8px 20px rgba(38,30,22,0.06);
+  text-align: left;
+  transition: transform .22s ease, box-shadow .22s ease;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.category-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 30px rgba(38,30,22,0.10);
+}
+
+.cat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  background: linear-gradient(135deg, #ffb27b, #e75b1b);
+  color: #fff;
+  box-shadow: 0 6px 12px rgba(231,91,27,0.18);
+}
+
+.category-item h3 {
+  font-size: 18px;
+  color: #2b1b15;
+  margin-top: 6px;
+}
+
+.category-item p {
+  color: #666;
+  font-size: 14px;
+  flex: 1;
+}
+
+/* botão dentro do card */
+.cat-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  text-align:center;
+  border: 2px solid transparent;
+  background: #fff;
+  color:#e67e22;  /* Alterado para tom mais quente */
+  align-self: start;
+  transition: background .18s, color .18s, transform .18s;
+  box-shadow: 0 6px 14px rgba(198,91,26,0.06);
+}
+.cat-btn:hover {
+  background: #e67e22;  /* Alterado para tom mais quente */
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+  background: #2b1b15;
+  color: #fff;
+  padding: 28px 20px;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 1000px) {
+  .category-list { grid-template-columns: repeat(2, 1fr); }
+  .categories-hero h1 { font-size: 34px; }
+}
+
+@media (max-width: 600px) {
+  .header__inner { padding: 12px 16px; }
+  .nav__list { display: none; }
+  .category-list { grid-template-columns: 1fr; gap: 16px; }
+  .categories-hero { margin: 28px 12px; padding: 20px 8px; }
+  .categories-hero h1 { font-size: 28px; }
+}

@@ -1,0 +1,134 @@
+/* =====================
+   Reset básico
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fffaf7; /* Cor de fundo suave */
+    color: #2c3e50; /* Cor do texto */
+    line-height: 1.6;
+}
+
+/* =====================
+   Header
+===================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cart a {
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+/* =====================
+   Seção Sobre
+===================== */
+.about {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 36px;
+    color: #2b1b15; /* Cor para o título */
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.about h2 {
+    font-size: 24px;
+    color: #e67e22; /* Cor para subtítulos */
+    margin-top: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #34495e;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* =====================
+   Footer
+===================== */
+footer {
+    background-color: #40210f;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* =====================
+   Responsividade
+===================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav__list {
+        display: none; /* Podemos adicionar um menu de hambúrguer mais tarde */
+    }
+
+    .about {
+        padding: 40px 20px;
+    }
+
+    .about h1 {
+        font-size: 30px;
+    }
+
+    .about h2 {
+        font-size: 22px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
